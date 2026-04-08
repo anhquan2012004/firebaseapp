@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt vé xem phim"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvShowtimeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suất chiếu: Đang tải..."
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPriceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá vé: 0đ"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số ghế (ví dụ: A1, B5)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSeatNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Xác nhận đặt vé"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
